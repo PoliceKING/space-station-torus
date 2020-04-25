@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c4e87b86af15844a4cd316bc5de423, type: 3}
+  m_Name: TowerProfile
+  m_EditorClassIdentifier: 
+  groundBlocks:
+  - {fileID: 3673722810935237965, guid: 22d6d4b4b19385b47a24337c40596759, type: 3}
+  - {fileID: 1846653201744175015, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
+  - {fileID: -5387877993904369314, guid: 8778eeb1b3de9714f918b05acc176ee6, type: 3}
+  mainBlocks:
+  - {fileID: 1846653201744175015, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
+  altBlocks:
+  - {fileID: -5387877993904369314, guid: 8778eeb1b3de9714f918b05acc176ee6, type: 3}
+  - {fileID: 3673722810935237965, guid: 22d6d4b4b19385b47a24337c40596759, type: 3}
+  roofBlocks:
+  - {fileID: 1846653201744175015, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
+  - {fileID: 5924159088411371066, guid: 405f1e75807ad8442bbb85a53c294515, type: 3}
+  - {fileID: -2001007463727224436, guid: 4af672453f932bc49b933d480bd1632e, type: 3}
+  - {fileID: 8364062792205436496, guid: be57a6ce96267bd48a791b4707db8088, type: 3}
+  - {fileID: -2423763149016875186, guid: 90fa51b4101d8444ab7bf854f83fd3e2, type: 3}
+  - {fileID: 746850768763028875, guid: 2ee8f6fb1637c3441a6f07bdb251ebcf, type: 3}
+  groundMaterials:
+  - {fileID: 2100000, guid: 41bc645e1434fb6408701fd4a422f4dd, type: 2}
+  - {fileID: 2100000, guid: 656655d3bca20a441ab9f726c8a95eb7, type: 2}
+  - {fileID: 2100000, guid: 5d02f2bf6b793024ba65f040f636a39d, type: 2}
+  mainMaterials:
+  - {fileID: 2100000, guid: 656655d3bca20a441ab9f726c8a95eb7, type: 2}
+  - {fileID: 2100000, guid: 41bc645e1434fb6408701fd4a422f4dd, type: 2}
+  - {fileID: 2100000, guid: 5d02f2bf6b793024ba65f040f636a39d, type: 2}
+  - {fileID: 2100000, guid: 3681bb37fc4b76f44980d855668ed2a8, type: 2}
+  roofMaterials:
+  - {fileID: 2100000, guid: 656655d3bca20a441ab9f726c8a95eb7, type: 2}
+  - {fileID: 2100000, guid: 5d02f2bf6b793024ba65f040f636a39d, type: 2}
+  - {fileID: 2100000, guid: 8bbd79fd8ef467546bf5889190bfa86e, type: 2}
+  - {fileID: 2100000, guid: 41bc645e1434fb6408701fd4a422f4dd, type: 2}
+  - {fileID: 2100000, guid: 8d8d86bfc5f70724c9ed43922f259a31, type: 2}
+  - {fileID: 2100000, guid: 3681bb37fc4b76f44980d855668ed2a8, type: 2}
+  maxHeight: 4
