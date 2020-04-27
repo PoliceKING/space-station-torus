@@ -5,6 +5,8 @@ namespace CITY
 {
     public class NavTowerBlock : MonoBehaviour
     {
+        public SpawnPointsGenerator spawns;
+
         public BuildingProfile myProfile;
         public Transform basePrefab;
         public int recursionLevel = 0;
@@ -45,7 +47,7 @@ namespace CITY
                 myMesh = myProfile.groundBlocks[Random.Range(0, meshNum)];
                 myMaterial = myProfile.groundMaterials[Random.Range(0, matNum)];
             }
-
+            spawns = GameObject.Find("GameManager").GetComponent<SpawnPointsGenerator>();
             myMeshFilter.mesh = myMesh;
             myRenderer.material = myMaterial;
 
@@ -57,6 +59,10 @@ namespace CITY
                     int MeshNum = myProfile.roofBlocks.Length;
                     int matNum = myProfile.roofMaterials.Length;
                     child.GetComponent<NavTowerBlock>().Initialize(recursionLevel + 1, myProfile.roofMaterials[Random.Range(0, matNum)], myProfile.roofBlocks[Random.Range(0, MeshNum)]);
+                    if(child.GetComponent<NavTowerBlock>().myMesh == myProfile.roofBlocks[0] && spawns.spawnList.Count < spawns.spawnPointMaxCount)
+                    {
+                        spawns.GenerateSpawnPoint(child.transform);
+                    }
                 }
                 else
                 {
@@ -64,6 +70,7 @@ namespace CITY
                     int meshNum = myProfile.mainBlocks.Length;
                     int matNum = myProfile.mainMaterials.Length;
                     child.GetComponent<NavTowerBlock>().Initialize(recursionLevel + 1, myProfile.mainMaterials[Random.Range(0, matNum)], myProfile.mainBlocks[Random.Range(0, meshNum)]);
+
 
                 }
             }

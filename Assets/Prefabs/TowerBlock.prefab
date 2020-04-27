@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 677057ce020564c42891e77fa0ae3f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 8734685610848046091, guid: 76133282c37217c4895097b7828b668c, type: 3}
   myProfile: {fileID: 11400000, guid: 2844981bd69f33745bea65667a842c83, type: 2}
   basePrefab: {fileID: 2626225873685222463}
   recursionLevel: 0

@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
         float zRoll = keyboard.qKey.ReadValue() - keyboard.eKey.ReadValue();
         float xRoll = keyboard.upArrowKey.ReadValue() - keyboard.downArrowKey.ReadValue();
-        float yRoll = keyboard.leftArrowKey.ReadValue() - keyboard.rightArrowKey.ReadValue();
+        float yRoll = keyboard.rightArrowKey.ReadValue() - keyboard.leftArrowKey.ReadValue();
 
         Vector3 rotation = new Vector3(xRoll, yRoll, zRoll);
         Vector3 move = new Vector3(xInput, yInput, zInput);
