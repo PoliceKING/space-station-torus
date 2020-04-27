@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -2382411419292651709}
   - component: {fileID: -7773167953696346410}
   - component: {fileID: 6736385324045026179}
+  - component: {fileID: 4397059618074870011}
   m_Layer: 0
   m_Name: TowerBlock
   m_TagString: Untagged
@@ -110,3 +111,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1846653201744175015, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
+--- !u!208 &4397059618074870011
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7043117650723155105}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.05, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.05, z: 0}
+  m_TimeToStationary: 0.5

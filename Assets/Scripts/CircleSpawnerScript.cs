@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 namespace CITY
 {
     public class CircleSpawnerScript : MonoBehaviour
     {
-        public Transform geometryParent;
+        private Transform geometryParent;
+        public GameObject tilePrefab;
         public GameObject buildingPrefab;
         public BuildingProfile[] profileArray;
 
         public void BuildingRing(int objectCount, float ringRadius, float objectChance)
         {
-            for (int i = 0; i <= objectCount; i++)
+            for (int i = 0; i < objectCount; i++)
             {
                 geometryParent = GameObject.Find("LevelGeometry").transform;
                 int random = Random.Range(0, profileArray.Length);
@@ -19,6 +21,9 @@ namespace CITY
                 if (Random.Range(0, 100) < objectChance)
                 {
                     Instantiate(buildingPrefab, pos, Quaternion.LookRotation(transform.forward, -pos), geometryParent).GetComponent<NavTowerBlock>().SetProfile(profileArray[random]);
+                } else
+                {
+                    Instantiate(tilePrefab, pos, Quaternion.LookRotation(transform.forward, -pos), geometryParent);
                 }
                 i++;
             }

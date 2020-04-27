@@ -43,7 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1948147eeeb31aa45829f28baba29a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  geometryParent: {fileID: 8997526456028977285, guid: dd77c6d1d33f0cb4ab41f05ce96d541d,
+  target: {fileID: 3975560846571051596, guid: 44a6c8550e5b6de4db621f01f7eda5b7, type: 3}
+  tilePrefab: {fileID: 6696047997465096114, guid: 3edfadb269c370c4298ddd671cf7bc85,
+    type: 3}
+  agentPrefab: {fileID: 3749102837152452319, guid: f3f9cf9983048214d88ae967862cfbca,
     type: 3}
   buildingPrefab: {fileID: 7043117650723155105, guid: 1361452a5d1161747966927be9ceb2b8,
     type: 3}
