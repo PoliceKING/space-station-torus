@@ -13,21 +13,23 @@ MonoBehaviour:
   m_Name: NavTowerProfile A
   m_EditorClassIdentifier: 
   groundBlocks:
-  - {fileID: 3673722810935237965, guid: 22d6d4b4b19385b47a24337c40596759, type: 3}
-  - {fileID: 1846653201744175015, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
-  - {fileID: -5387877993904369314, guid: 8778eeb1b3de9714f918b05acc176ee6, type: 3}
+  - {fileID: 4493585093827132993, guid: 86c6dfc9843ce814092faf5e62b7100d, type: 3}
+  - {fileID: 1846653201744175015, guid: ee9a8e8636a59264ebdcef624c013dcc, type: 3}
+  - {fileID: -5495902117074765545, guid: f71041e2e13c3b044ba7a7c27bd0e1b8, type: 3}
   mainBlocks:
-  - {fileID: 1846653201744175015, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
+  - {fileID: 1846653201744175015, guid: ee9a8e8636a59264ebdcef624c013dcc, type: 3}
+  - {fileID: -5495902117074765545, guid: f71041e2e13c3b044ba7a7c27bd0e1b8, type: 3}
+  - {fileID: 4493585093827132993, guid: 86c6dfc9843ce814092faf5e62b7100d, type: 3}
   altBlocks:
-  - {fileID: -5387877993904369314, guid: 8778eeb1b3de9714f918b05acc176ee6, type: 3}
-  - {fileID: 3673722810935237965, guid: 22d6d4b4b19385b47a24337c40596759, type: 3}
+  - {fileID: -5495902117074765545, guid: f71041e2e13c3b044ba7a7c27bd0e1b8, type: 3}
+  - {fileID: 4493585093827132993, guid: 86c6dfc9843ce814092faf5e62b7100d, type: 3}
   roofBlocks:
-  - {fileID: 1846653201744175015, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
-  - {fileID: 5924159088411371066, guid: 405f1e75807ad8442bbb85a53c294515, type: 3}
-  - {fileID: -2001007463727224436, guid: 4af672453f932bc49b933d480bd1632e, type: 3}
+  - {fileID: 1846653201744175015, guid: ee9a8e8636a59264ebdcef624c013dcc, type: 3}
+  - {fileID: 5924159088411371066, guid: c023a8cb348e01a45bf640d07fc48b08, type: 3}
+  - {fileID: -2001007463727224436, guid: 41c84dcad2187fe42bd7cf4a12091e10, type: 3}
   - {fileID: 8364062792205436496, guid: be57a6ce96267bd48a791b4707db8088, type: 3}
-  - {fileID: -2423763149016875186, guid: 90fa51b4101d8444ab7bf854f83fd3e2, type: 3}
-  - {fileID: 746850768763028875, guid: 2ee8f6fb1637c3441a6f07bdb251ebcf, type: 3}
+  - {fileID: -2423763149016875186, guid: 995d6ca7d62406d45a6e0be4f0e7c219, type: 3}
+  - {fileID: -7571494130184428654, guid: b05db4107a6b6cb40bf9ea208807c77e, type: 3}
   groundMaterials:
   - {fileID: 2100000, guid: 656655d3bca20a441ab9f726c8a95eb7, type: 2}
   mainMaterials:

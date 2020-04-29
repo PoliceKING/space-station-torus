@@ -10,6 +10,7 @@ public class SpawnPointsGenerator : MonoBehaviour
     public int spawnPointMaxCount;
     public GameObject playerPrefab;
     public bool playerIsSpawned = false;
+    public bool showSpawnPoints = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,10 @@ public class SpawnPointsGenerator : MonoBehaviour
     public void GenerateSpawnPoint(Transform blockTransform)
     {
         spawnList.Add(blockTransform);
-        Instantiate(spawnTester, blockTransform.position + (blockTransform.up * 2.0f), blockTransform.rotation);
+        if(showSpawnPoints)
+        {
+            Instantiate(spawnTester, blockTransform.position + (blockTransform.up * 2.0f), blockTransform.rotation);
+        }
         if(spawnList.Count >= spawnPointMaxCount)
         {
             Transform[] spawnArray = new Transform[spawnList.Count];

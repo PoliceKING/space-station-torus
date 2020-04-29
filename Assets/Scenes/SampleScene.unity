@@ -152,10 +152,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTester: {fileID: 908011714788139247, guid: 9f6fb811484f3b34d8b11fd6d76ec2b3,
     type: 3}
-  spawnPointMaxCount: 100
+  spawnPointMaxCount: 200
   playerPrefab: {fileID: 8734685610848046091, guid: 76133282c37217c4895097b7828b668c,
     type: 3}
   playerIsSpawned: 0
+  showSpawnPoints: 0
 --- !u!4 &730162182
 Transform:
   m_ObjectHideFlags: 0
@@ -353,10 +354,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ringParent: {fileID: 0}
   stationRadius: 60
-  buildingAmount: 700
+  buildingAmount: 500
   stationLength: 50
-  ringOffset: 1.72
-  buildingChance: 9.7
+  ringOffset: 1
+  buildingChance: 29.9
   spawnerObject: {fileID: 1874713236973149893, guid: a328af5a1148d6542ba80820fe7b8adb,
     type: 3}
 --- !u!4 &2041868519
