@@ -37,4 +37,4 @@ MonoBehaviour:
   roofMaterials:
   - {fileID: 2100000, guid: 8bbd79fd8ef467546bf5889190bfa86e, type: 2}
   - {fileID: 2100000, guid: 3681bb37fc4b76f44980d855668ed2a8, type: 2}
-  maxHeight: 4
+  maxHeight: 6

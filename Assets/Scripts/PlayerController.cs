@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         Vector3 rotation = new Vector3(xRoll, yRoll, zRoll);
         Vector3 move = new Vector3(xInput, yInput, zInput);
 
-        rb.AddRelativeForce(move * speed * Time.deltaTime, ForceMode.Force);
-        rb.AddRelativeTorque(rotation * rotSpeed * Time.deltaTime, ForceMode.Force);
+        rb.AddRelativeForce(move * speed * Time.fixedDeltaTime, ForceMode.Force);
+        rb.AddRelativeTorque(rotation * rotSpeed * Time.fixedDeltaTime, ForceMode.Force);
     }
 }
