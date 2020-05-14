@@ -3,10 +3,15 @@
 by Brendan Hewson
 
 Controls:
+
 W & S: Forward & Back
+
 A & D: Left & Right
+
 R & F: Up & Down
 
 Q & E: Roll
+
 Left & Right: Yaw
+
 Up & Down: Pitch
