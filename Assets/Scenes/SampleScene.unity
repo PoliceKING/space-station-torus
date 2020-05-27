@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScore: 0
-  timerMins: 1
+  timerMins: 8
   timerSecs: 0
   timeOut: 0
   pickupPrefab: {fileID: 8052205600057527523, guid: d9e93c34ba31d8d40ab11732bb78c207,
@@ -414,6 +414,7 @@ MonoBehaviour:
   gameScore:
     score: 0
   onMission: 0
+  gameOver: 0
 --- !u!4 &980095551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1199226725998420929, guid: 3d186d8b5a244014088a07670028b17a,
