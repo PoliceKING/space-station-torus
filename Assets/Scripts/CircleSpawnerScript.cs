@@ -13,11 +13,6 @@ namespace CITY
         public GameObject buildingPrefab;
         public BuildingProfile[] profileArray;
 
-        private void Start()
-        {
-
-        }
-
         public void BuildingRing(int objectCount, float ringRadius, float objectChance)
         {
             for (int i = 0; i < objectCount; i++)

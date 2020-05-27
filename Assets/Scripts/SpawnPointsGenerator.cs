@@ -12,17 +12,7 @@ public class SpawnPointsGenerator : MonoBehaviour
     public bool playerIsSpawned = false;
     public bool showSpawnPoints = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public Transform[] spawnTransformArray;
 
     public void GenerateSpawnPoint(Transform blockTransform)
     {
@@ -33,15 +23,14 @@ public class SpawnPointsGenerator : MonoBehaviour
         }
         if(spawnList.Count >= spawnPointMaxCount)
         {
-            Transform[] spawnArray = new Transform[spawnList.Count];
-            spawnList.CopyTo(spawnArray);
+            spawnTransformArray = new Transform[spawnList.Count];
+            spawnList.CopyTo(spawnTransformArray);
             if(!playerIsSpawned)
             {
-                int randomSpawn = Random.Range(0, spawnArray.Length);
-                Instantiate(playerPrefab, spawnArray[randomSpawn].position + (spawnArray[randomSpawn].up * 2.0f), spawnArray[randomSpawn].rotation);
+                int randomSpawn = Random.Range(0, spawnTransformArray.Length);
+                Instantiate(playerPrefab, spawnTransformArray[randomSpawn].position + (spawnTransformArray[randomSpawn].up * 2.0f), spawnTransformArray[randomSpawn].rotation);
                 playerIsSpawned = true;
             }
         }
-        Debug.Log(spawnList.Count);
     }
 }
