@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 using TMPro;
 
 public class PlayerController : MonoBehaviour
@@ -224,11 +223,11 @@ public class PlayerController : MonoBehaviour
         //HANDLE TIMER DISPLAY TEXT
         if (missionHandler.timerSecs > 10)
         {
-            timer.text = "Time Remaining: " + (int)missionHandler.timerMins + " : " + (int)missionHandler.timerSecs; 
+            timer.text = "Time Remaining: \n" + (int)missionHandler.timerMins + " : " + (int)missionHandler.timerSecs; 
         }
         else
         {
-            timer.text = "Time Remaining: " + (int)missionHandler.timerMins + " : " + "0" + (int)missionHandler.timerSecs;
+            timer.text = "Time Remaining: \n" + (int)missionHandler.timerMins + " : " + "0" + (int)missionHandler.timerSecs;
         }
 
         if(missionHandler.timerMins < 1)
